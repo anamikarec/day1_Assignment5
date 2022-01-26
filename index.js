@@ -5,10 +5,12 @@ var input_stdin = "";
 var input_stdin_array = "";
 var input_currentline = 0;
 
-// Begin reading from stdin so the process does not exit. (basically reading from the command line)
+// process.stdin is an inbuilt application programming interface of the process module which listens the userinput
+//  process.stdin.resume() is a readable Stream that points to a standard input stream (stdin). Standard input streams are paused by default, so you must call process.
+// start reading from stdin so the process does not exit. (basically reading from the command line)
 process.stdin.resume();
 
-//set the enconding for received data to ascii so it will be readable
+//set the enconding for received data to ascii so it will be readable.
 process.stdin.setEncoding('ascii');
 
 //if data is coming through, put it in the input_stdin string. keep receiving data until no more comes through
